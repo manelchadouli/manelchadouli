@@ -2,17 +2,19 @@ name: Kubernetes CI/CD (No SSH)
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Build Docker image
-        run: docker build -t portfolio .
+        run: docker build -t portfolio -f docker/Dockerfile .
 
       - name: Create Kind cluster
         uses: helm/kind-action@v1
