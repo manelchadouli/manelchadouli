@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Manel Chadouli</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <nav class="navbar">
   <div class="nav-container">
-    <span class="logo">MC</span>
+    <span class="logo">Manel Chadouli</span>
     <ul>
       <li><a href="index.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
       <li><a class="active" href="contact.html">Contact</a></li>
     </ul>
   </div>
@@ -23,23 +24,16 @@
   <div class="container">
     <h2>Contact Me</h2>
 
-    <p>
-      I am open to DevOps and platform engineering opportunities,
-      including remote and international roles.
-    </p>
+    <form action="https://formspree.io/f/mqearkzv" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
 
-    <div class="contact-box">
-      <p><strong>Email:</strong> chadomanel25@gmail.com</p>
-      <p><strong>Location:</strong> Alger, Algeria</p>
-      <p><strong>GitHub:</strong>
-        <a href="https://github.com/manelchadouli" target="_blank">
-          github.com/YOUR_USERNAME
-        </a>
-      </p>
-      <p><strong>LinkedIn:</strong>
-        <a href="#" target="_blank">Add your LinkedIn</a>
-      </p>
-    </div>
+    <p class="note">
+      Or reach me directly at: <strong>chadomanel25@gmail.com</strong>
+    </p>
   </div>
 </section>
 
