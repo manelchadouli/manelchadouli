@@ -28,8 +28,27 @@ This is my personal portfolio website deployed using **Kubernetes-first DevOps p
 ## Local Testing
 1. Make sure Docker, kubectl, Kind installed
 2. Build Docker image:
-   ```bash
+```bash
    docker build -t portfolio -f docker/Dockerfile .
+```
+3. create kind cluster:
+```bash
+   kind create cluster --name portfolio
+```
+3. Load image:
+```bash
+   kind load docker-image portfolio --name portfolio
+```
+3. Deploy:
+```bash
+   kubectl apply -f k8s/
+```
+3. Access site:
+```bash
+   kubectl port-forward svc/portfolio-service 8080:80
+```
+
+
 
 
 
