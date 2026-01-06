@@ -13,14 +13,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v2
+
       - name: Build Docker image
         run: docker build -t portfolio -f docker/Dockerfile .
 
       - name: Create Kind cluster
-        uses: helm/kind-action@v1
+        run: kind create cluster --name portfolio
 
-      - name: Load image into Kind
-        run: kind load docker-image portfolio
+      - name: Load Docker image into Kind
+        run: kind load docker-image portfolio --name portfolio
 
       - name: Deploy to Kubernetes
         run: kubectl apply -f k8s/
