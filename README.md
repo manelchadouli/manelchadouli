@@ -26,3 +26,6 @@ This project is a personal portfolio website deployed using
 ## Status
 ✅ Fully working locally  
 🔜
+
+![CI/CD](https://github.com/manelchadouli/manelchadouli/actions/workflows/ci-cd.yaml/badge.svg)
+
