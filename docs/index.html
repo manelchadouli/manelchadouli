@@ -1,19 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Maria | DevOps Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manel Chadouli | DevOps Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Maria</h1>
-  <h3>Kubernetes & DevOps Portfolio</h3>
 
-  <p>
-    This website is deployed using Kubernetes
-    with a NO-SSH CI/CD pipeline.
-  </p>
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
 
-  <p>
-    Stack: Docker, Kubernetes, GitHub Actions
-  </p>
+<header class="header">
+  <div class="container">
+    <h1>CHADOULI Manel</h1>
+    <p class="subtitle">DevOps Engineer • Kubernetes • CI/CD • Observability</p>
+
+    <div class="contact">
+      <span>📍 Alger, Algeria</span>
+      <span>✉️ chadomanel25@gmail.com</span>
+      <span>🌍 Open to Remote Opportunities</span>
+    </div>
+
+    <a class="btn" href="assets/ManelChadouliCV.pdf" download>
+      📄 Download CV
+    </a>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container fade-in">
+    <h2>Profile</h2>
+    <p>
+      Production-oriented DevOps Engineer with hands-on experience in CI/CD automation,
+      containerized deployments, and infrastructure observability.
+      I focus on reliability, scalability, and eliminating manual operations.
+    </p>
+    <p>
+      I also collaborate closely with AI teams by deploying and operating local LLM
+      infrastructures (vLLM, llama.cpp, quantization) while maintaining DevOps best practices.
+    </p>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container fade-in">
+    <h2>Core Skills</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>DevOps & Cloud</h3>
+        <ul>
+          <li>GitLab CI/CD, GitHub Actions</li>
+          <li>Docker, Docker Compose</li>
+          <li>Kubernetes (Deployments, Services)</li>
+          <li>Ansible, Bash</li>
+          <li>Nginx, Airflow</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Observability</h3>
+        <ul>
+          <li>Prometheus & Grafana</li>
+          <li>Centralized logging</li>
+          <li>Automated backups</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Development</h3>
+        <ul>
+          <li>Python, Django, NestJS</li>
+          <li>React, TypeScript</li>
+          <li>Tailwind CSS</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>AI Infrastructure</h3>
+        <ul>
+          <li>Local LLM deployment</li>
+          <li>Quantization (int8, int4)</li>
+          <li>RAG systems</li>
+          <li>Neo4j</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container fade-in">
+    <h2>DevOps Projects</h2>
+
+    <div class="card">
+      <h3>Kubernetes CI/CD Portfolio (No SSH)</h3>
+      <p>
+        End-to-end DevOps project demonstrating Dockerized application deployment
+        to Kubernetes using GitHub Actions.
+        Infrastructure is fully automated and ephemeral.
+      </p>
+      <ul>
+        <li>Docker image build</li>
+        <li>Kubernetes Deployment & Service</li>
+        <li>CI/CD pipeline with GitHub Actions</li>
+        <li>No SSH access at any stage</li>
+      </ul>
+      <p>
+        🔗 <a href="https://github.com/manelchadouli/manelchadouli" target="_blank">
+          View on GitHub
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container fade-in">
+    <h2>Kubernetes Architecture</h2>
+    <p>
+      This portfolio follows a Kubernetes-first DevOps architecture:
+    </p>
+    <ul>
+      <li>Application packaged as an immutable Docker image</li>
+      <li>Kubernetes manages replicas and lifecycle</li>
+      <li>Service abstracts networking</li>
+      <li>CI/CD pipeline creates and deploys infrastructure automatically</li>
+    </ul>
+
+    <!-- Optional image -->
+    <!-- <img src="assets/k8s-diagram.png" class="diagram" alt="Kubernetes Architecture"> -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container fade-in">
+    <h2>Experience</h2>
+
+    <div class="experience">
+      <h3>DevOps Engineer — Monad</h3>
+      <span class="date">July 2024 – Present</span>
+      <ul>
+        <li>CI/CD pipeline design and maintenance</li>
+        <li>Container orchestration and deployment automation</li>
+        <li>Monitoring and observability (Prometheus & Grafana)</li>
+        <li>Production support for application teams</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <h3>Data / DevOps Engineer Intern — Monad</h3>
+      <span class="date">Jan 2024 – July 2024</span>
+      <ul>
+        <li>LLM-based chatbot deployment</li>
+        <li>Docker, Nginx, CI/CD automation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 CHADOULI Manel</p>
+  <p>DevOps • Reliability • Automation • No SSH</p>
+</footer>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("light");
+}
+</script>
+
 </body>
 </html>
