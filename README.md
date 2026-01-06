@@ -27,5 +27,5 @@ This project is a personal portfolio website deployed using
 ✅ Fully working locally  
 🔜
 
-![CI/CD](https://github.com/manelchadouli/manelchadouli/actions/workflows/ci-cd.yaml/badge.svg)
+[![Kubernetes CI/CD (No SSH)](https://github.com/manelchadouli/manelchadouli/actions/workflows/ci-cd.yaml/badge.svg)](https://github.com/manelchadouli/manelchadouli/actions/workflows/ci-cd.yaml)
 
